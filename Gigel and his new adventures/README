@@ -1,0 +1,41 @@
+==========README==========
+Piele Mihai Teodor 321 CBa
+
+Task_1:
+    -> functia de divide_matrix:
+        *am testat cele 4 cazuri/cadrane ale matricei 
+        impartite in 4 prin care pot trece
+        *singura "smecherie" pe care o fac este sa actualizez
+        datele de fiecare data cand gasesc cadranul in care se
+        incadreaza coordonatele mele, iar cand se ajunge pe cel
+        de al 4-lea (dreapta jos) retin de cate ori am trecut
+        prin acel cadran. Daca numarul de treceri prin cadranul 4
+        este par, acolo exista un 0, daca este impar este un 1.
+    -> complexitatea este log n
+
+Task_2:
+    -> functia appearances (greedy)
+        *pentru fiecare litera din alfabet in parte,
+        ii testez numarul de aparitii intr-un cuvant.
+        daca in urma secventei daca litera ++ altfel --
+        daca acest numar de aparitii este pozitiv, inseamna
+        ca litera este dominanta
+        *ulterior sortez nr de aparitii descrescator si iau
+        cuvant cu cuvant si vad daca impreuna au o litera dominanta
+        prin "sum"
+    -> complexitatea este O(26*(L + n*log(N)))
+
+Task_3:
+    -> functia divizor
+        *calculeaza divizorii unui nr
+        *calculez costurile cu o dinamica unde de la fiecare nr merg mai
+        departe adunand un divizor
+        *la final fac rucsac pt vectorul de costuri si vectorul de puncte
+    -> functia puncte_calificari
+        *aceasta functie am luat-o din laborator
+    -> complexitatea este teta(n * k)
+        
+Task_4,5:
+    -> doesn't exist, sorry
+
+----> Paste fericit! <----

@@ -1,0 +1,30 @@
+=========Tema2_PA=========
+Piele_Mihai_Teodor_321_CBa
+
+Problema 1)
+    - algoritmi folositi: algoritmul lui lee, partitionarea unei multimi,
+                          crearea permutarilor unei multimi, problema comis-voiajorului
+    - complexitate: O(S!)
+    - descriere solutie: - creez graful drumurilor minime intre toate zonele muradre si dupa includ roboteii in graful lor
+                           personal cu distante minime
+                         - dupa, pe grafurile cu roboteii, fac problema comis-voiajorului
+                         - returnez minimul rezultatelor obtinute
+
+Problema 3)
+    - algoritmi folositi: algoritmul lui lee
+    - complexitate: O(N*M)
+    - descriere solutie: - merg ca la algoritmul lui lee daor ca ma duc in cele 4 directii pana nu mai pot si actualizez costuruile
+                         - d[i][j][d] = costul minim pentru a ajunge pe pozitia (i, j) orientat pe d
+                         - ultima actualizare este pentru a rezolva unele coliziuni cu drumuri neoptime
+
+Problema 4)
+    - algoritmi folositi: sortare topologica
+    - complexitate: O(A*N)
+    - descirere solutie: - generez graful relatiilor fix ca in explicatii
+                         - ne uitam pe prima coloana (pista 1) si adaugam muchii orientate intre oricare 2 valori 
+                           consecutive diferite (pe exemplul 2 adaugam intre 3 si 2 muchie)
+                         - in caz de egalitate pe pista 1 (pe exemplul 2 avem egalitate pe pista 1 in intervalele [1-4] si [5-7]),
+                           ne uitam pe pista 2 si adaugam muchii intre oricare 2 valori consecutive diferite (in intervalul [1-4] adaugam 
+                           intre 2 si 4 si in intervalul [5-7] adaugam intre 3 si 1)
+                         - in caz de egalitate pe pistele 1 si 2 ne uitam la pista 3 etc 
+    - numarul de muchii din graf este maxim A-1 si solutia o gasim prin sortarea topologica a grafului obtinut.
